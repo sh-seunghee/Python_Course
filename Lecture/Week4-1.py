@@ -7,7 +7,6 @@
     if-else statement
     define function
 '''
-
 # ------------------------------ Mutability ------------------------------#
 # List is mutable whereas string is not mutable
 
@@ -27,7 +26,6 @@ newList = myList.remove(3)
 print (newList) # print 'None'
 
 # ------------------------------ Tuples ------------------------------ #
-
 # Tuple is collection of Python objects
 # It can have different type of objects like list!
 
@@ -52,7 +50,6 @@ t[1][1] = 77
 print (t) # Yes! it changes
 # Tuples are immutable
 # but if it has a mutable object inside of the tuple, then that can be changed
-
 
 # ------------------------------ Conditions ------------------------------ #
 # A condition is an expression that evaluates to True or False
@@ -81,7 +78,6 @@ In-class exercise-1
     The  end of input is indicated when an “\end” is entered. 
     Print the list crated.
 '''
-
 output = []
 end="\end"
 newtext=""
@@ -94,7 +90,6 @@ while newtext != end:
 #output.remove(end)
 print(output)
 
-
 '''
 In-class exercise-2
 
@@ -105,7 +100,6 @@ In-class exercise-2
     (c) prints the number of times s occurs in the strings 
         that are input subsequently.
 '''
-
 end="\end"
 newtext = ""
 
@@ -160,7 +154,6 @@ Play and learn 1
     [Do not use the sum() function; use a loop to add.]
 
 '''
-
 def num_sum(nums):
     sum = 0
     for i in range(len(nums)):
@@ -176,7 +169,6 @@ Play and learn 2
     It removes all letters from the string that are in the list.
 
 '''
-
 def pl2(s, l):
 
     for i in range(len(l)):

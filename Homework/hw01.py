@@ -33,4 +33,3 @@ print ("sin(x2) = %f" %sin(x2))
 C = 37
 F = (9/5)*C + 32.0
 print ("Fahrenheit equivalent of 37degC is %0.1f" %(F))
-

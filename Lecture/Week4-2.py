@@ -7,7 +7,6 @@ import openpyxl as op
     iteraton, iterable, and iterator
     List comprehension
 '''
-
 # ------------------------------ openpyxl ------------------------------#
 # read_only = True : file is read much faster
 # so for the huge file, read the file with read_only and write into a new file
@@ -47,7 +46,6 @@ In-class exercise-1
     
     data ["A": [ grades ] , "B": [ grages ], "C": [ grades ]]
 '''
-
 maxRow = sheet.max_row # 4
 maxCol = sheet.max_column # 6
 
@@ -73,12 +71,10 @@ for r in range(2, maxRow+1):
     sheet[col_loc] = sumgrade
 
 print (data)
-
 book.save("new_file2.xlsx")
 
 # ------------------------------ parameter ordering ------------------------------#
 # ------------------------------ keyword parameters ------------------------------#
-
 def f(name, address):
     print ("Name:", name, "\n","Address: ", address)
 
@@ -94,7 +90,6 @@ def f2(name, address="Unknown"):
 f2(name="Some name")
 
 # ------------------------------ Breaking a loop ------------------------------#
-
 num = None
 sumNum = 0
 
@@ -109,7 +104,6 @@ print (sumNum)
 
 # -------------------------- iteraton(range), iterable, and iterator --------------------------#
 # -------------------------- List comprehension --------------------------#
-
 x = range(4) # x = range(0,4)
 
 #for i in x:

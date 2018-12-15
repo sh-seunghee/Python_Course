@@ -4,10 +4,8 @@
     read and write files (text, binary)
     Dictionaries
 '''
-
 # -----------------------  Dictionaries -----------------------#
 # A set of key-value pairs
-
 # Key and value can be anything. They can be a tuple, list, ..anything
 
 wimbledon_mens={1968: "Rod Laver", 1969: "Rod Laver", 1970: "John Newcombe"}
@@ -32,7 +30,6 @@ if 1971 in wimbledon_womens:
 else:
     print ("key 1971 does not exist")
 
-
 '''
 Play and Learn
 
@@ -47,7 +44,6 @@ Play and Learn
     Print “Key does not exist” if it does not!
  
 '''
-
 teams = {"M1": "name1", "M2": "name2"}
 print (teams)
 
@@ -57,11 +53,8 @@ if key in teams:
 else:
     print ("Key does not exist")
 
-
-
 for k in teams:
     print (k, teams[k])
-
 '''
 In-class Exercise
 
@@ -86,11 +79,9 @@ In-class Exercise
     for each group, along with group ID, on a separate line. 
 
 '''
-
 filename = "grades_file.csv"
 
 f = open(filename, "r") # open file for read only
-
 grades = {}
 
 # Read the first line cause the first line is heading
@@ -112,9 +103,7 @@ while True:
     converted = [ float(x) for x in g_values[1:] ]
 
     grades[g_values[0]] = converted
-
     '''
-    
     for i in range(len(g_values)):
 
     if i==0:
@@ -128,7 +117,5 @@ while True:
     grades[key] = values
 
     '''
-
 f.close()
-
 print (grades)

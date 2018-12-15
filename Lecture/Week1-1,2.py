@@ -14,7 +14,6 @@
 '''
     This is comment for multiple lines.
 '''
-
 # ------------------------------ Assignment ------------------------------#
 
 # This statement is called assignment
@@ -93,7 +92,6 @@ Method:
     4. Print the estimate and the absolute value of the difference
         between the estimate and the value computing by using the sin() function from the math library.
 '''
-
 x = math.pi
 
 estimate = x - (pow(x, 3) / math.factorial(3)) + (pow(x, 5) / math.factorial(5))
@@ -103,7 +101,6 @@ print ("The estimate: %0.3f" %(estimate))
 
 diff = estimate - mathlib
 print ("The difference : %0.3f" %(diff))
-
 
 # ------------------------------ square, divisions ------------------------------#
 

@@ -15,7 +15,6 @@ for i in range(len(neg)):
 texts = []
 text = ""
 
-
 # Input text
 while ("\end" not in text):
     text = input()
@@ -71,7 +70,6 @@ elif (total_pos < total_neg):
 else:
     print ("Indeterminate")
 
-
 #############################
 print ("Q2")
 
@@ -121,5 +119,3 @@ for i in prime_in_num1:
             closest_num = i
 
 print ("Closest prime number: %g" %(closest_num))
-
-

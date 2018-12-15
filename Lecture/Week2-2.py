@@ -4,9 +4,7 @@
     Loops (for and while)
 
 '''
-
 # ------------------------------ Loops ------------------------------#
-
 # We will use the range() function in loops
 # Example: Find the sum of a list of numbers
 
@@ -31,7 +29,6 @@ Play and learn
     How can the period be removed from the last word in the output? 
     Try replace().
 '''
-
 p1 = "hello my name is seunghee."
 p1_words = p1.split()
 print (p1_words) # ['hello', 'my', 'name', 'is', 'seunghee.']
@@ -44,11 +41,9 @@ p1_words[-1] = lastWord
 for i in range(len(p1_words)):
     print (p1_words[i])
 
-
 '''
     p2. Input a string. Print each letter of the string on a new line.
 '''
-
 # not solved during the class
 p2 = "hello. my name is seunghee."
 print (len(p2))
@@ -56,14 +51,12 @@ for i in range(len(p2)):
     print (p2[i])
 
 # Using while
-
 # any loop need initialization
 for i in [22, 23, 24]:
     print (i)
 
 # when using 'for', computer knows how many loop body will be executed.
 # when using 'while", computer doesn't know when the condition will become false
-
 n = input() # Get an integer
 max = int(n)    # convert to int
 
@@ -75,7 +68,6 @@ while sum <= max:   # Termination condition
     nextTerm = nextTerm+2
 
 print (nextTerm, sum)
-
 
 # Nested for loops
 for i in range(3):

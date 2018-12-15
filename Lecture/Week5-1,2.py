@@ -1,5 +1,4 @@
 import numpy as np
-
 '''
 # Lecture note: Session 7 and 8
 
@@ -17,7 +16,6 @@ import numpy as np
     PyTorch: Dynamic neutral networks: Deep-learning
     TensorFlow: Deep learning
 '''
-
 def compute_count(state, index):
 
     count = 1
@@ -121,7 +119,6 @@ print (a[0])
 print (a[0][0])
 
 # ---------- Many other way to create array
-
 # three elements that equally spaced
 x = np.linspace(1,10,3) # [1. 5.5 10.]
 print (x)
@@ -151,11 +148,9 @@ print (a)
 a = np.ones((2,3), dtype=bool)
 print (a)
 
-
 '''
 Play and learn
 '''
-
 # P1: Learn to use random.randint(a,b): Generate a random integer between a and b
 import random
 x = random.randint(3,5)
@@ -168,20 +163,17 @@ b = np.array(a)
 print (b)
 
 # P3: Create a 2D array of random integers between 1 and 10 of shape (2,5).
-
 a = [random.randint(1,10) for i in range(5)] # List comprehension
 b = [random.randint(1,10) for i in range(5)] # List comprehension
 c = np.array([a,b])
 print (c)
 
 # P4: Create a 3D array of random integers between 1 and 10 of shape (3,2,5).
-
 a = [ [random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10)] for i in range(2)] # List comprehension
 b = [ [random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10)] for i in range(2)] # List comprehension
 c = [ [random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10)] for i in range(2)] # List comprehension
 
 a1 = np.array(a)
-
 d = np.array([a,b,c])
 
 print (d)
@@ -190,7 +182,6 @@ print (d.shape)
 
 # what is the advantage of array over list
 # = You can apply a function to every element of the array!
-
 def f(x): return (x*x)
 
 a = np.array([[1,2,3],[4,5,6]])

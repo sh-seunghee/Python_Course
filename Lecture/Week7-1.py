@@ -4,7 +4,6 @@
     learn OO programming (classes and objects)
 
 '''
-
 # -----------------------  OO programming ----------------------- #
 # Class: A blueprint (template) for creating objects
 # Object: An instance of a class created using the class blueprint
@@ -73,7 +72,6 @@ if usa.pop < mexico.pop:
     print ("mexico is larger")
 else:
     print ("usa is larger")
-
 '''
 c = input()
 c1, c2, c3 = c.split()
@@ -84,7 +82,6 @@ germany = Country(c1, c2, c3)
 
 print (germany.name)
 '''
-
 # -----------------------  Instance and static variables ----------------------- #
 # variables declared in a class declaration are considered "static", or "class" variables
 # Static variables can be used where the class can be used.
@@ -112,7 +109,6 @@ Play and Learn
     (f) Write a method named search() for an animal based on its group. The method inputs the list of animals and a group, and returns the name of each animal in that group; returns an empty list otherwise. (g) Test your program.
 
 '''
-
 class Animal2:
 
     def __init__(self, name, group, char, found):
@@ -130,7 +126,6 @@ class Animal2:
 
         region = input()
         self.found.append(region)
-
 
 cat = Animal2("cat", "Mammels", "cute", "seoul")
 dog = Animal2("dog", "Mammels", "cute", "usa")

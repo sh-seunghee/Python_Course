@@ -7,14 +7,12 @@
     Filter
     read and write files (text, binary)
 '''
-
 # ------------------------------ Lambda function ------------------------------#
 
 # A lambda operator creates anonymous function
 # Such a definition is not bound to a function identifier
 
 # lambda x,y: x+y
-
 # lambda x,y=12: x+y (default value of y is specified)
 
 # lambda x,y: y=12, x+y (WRONG! can't use assignment inside lambda functino)
@@ -28,7 +26,6 @@ print (type(f)) # <class 'function'>
 tlist = [(1,0), (10, 20), ("A", 2), ("B", -10)]
 
 # return the second element of the tuple
-
 tlist.sort(key=lambda t: t[1])
 print (tlist)
 
@@ -75,14 +72,12 @@ import functools
 z = iter([1,2,3,4])
 out = functools.reduce(lambda x, y: x**2+y**2, z) # the second element is iterator, so it is exhausting
 print (out) # 1172
-
 '''
 1. [1,2,3,4] -> [f(1,2),3,4] = [5,3,4]
 2. [5,3,4] -> [f(5,3), 4] = [34, 4]
 3. [34,4] -> [f(34, 4)] = 1172
 
 '''
-
 # ------------------------------ Filter ------------------------------#
 # Filter out all elements of a list that return True when a given function is applied
 # So function should return True or False
@@ -94,7 +89,6 @@ z=["A",12,"c",22] # Remove all strings
 
 out = filter(lambda x: type(x)==int, z)
 print (list(out)) # [12, 22]
-
 
 '''
 Play and Learn
@@ -122,7 +116,6 @@ Play and Learn
     Test your function with input (3, 9) and (3, 12).
 
 '''
-
 f = lambda tup: True if tup[0]**2 == tup[1] else False
 
 out = f( (3,9) )
@@ -130,7 +123,6 @@ print (out) # True
 
 out = f( (3, 6) )
 print (out) # False
-
 
 # -----------------------  File open, read, write and close -----------------------#
 
@@ -146,4 +138,3 @@ filename = "stats.txt"
 f=open(filename, "w") # open file for writing only
 f.write("Mean length="+str(35.23))
 f.close()
-

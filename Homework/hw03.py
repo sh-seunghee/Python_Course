@@ -9,7 +9,6 @@ def get_fx(guess, coe):
 
     return f_guess
 
-
 def get_f_dev_x(guess, coe):
 
     f_dev_guess = 0
@@ -30,12 +29,10 @@ for i in range(len(coe)):
 guess = input()
 guess = float(guess)
 
-
 #Initial guess x = ini
 #next guess x1 = x0 - ( f(x0) / f'(x0) )
 
 #find x where f(x) < 0.0001
-
 f_guess = 10.0 # initalization
 
 while (abs(f_guess) >= 0.0001):

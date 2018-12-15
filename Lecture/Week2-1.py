@@ -9,7 +9,6 @@
 '''
 
 # ------------------------------ Keyboard input ------------------------------#
-
 x=input()
 print (type(x)) # <class 'str'>
 
@@ -46,7 +45,6 @@ print (months)  # ['Jan', 'Feb', "Mar']
 months = m.split("&")   # you can separate it using some other separator other than space which is default
 print (months)
 
-
 # Play and learn
 
 '''
@@ -65,7 +63,6 @@ p3.
     Input a sequence of numbers separated by one or more spaces. 
     Separate the numbers and print them on separate lines.
 '''
-
 p1 = input()
 p1s = p1.split(",")
 
@@ -81,7 +78,6 @@ p3s = p3.split(" ")
 
 # There will be a many strings which is empty string
 print (p3s) # ['3', '', '', '4', '', '', '2', '', '','1']
-
 
 # ------------------------------ List ------------------------------#
 # Lists - Sequence of objects
@@ -135,7 +131,6 @@ print (L3)  # [] empty list
 L3 = L1*-1
 print (L3)  # [] empty list
 
-
 '''
 Play and Learn
 
@@ -152,7 +147,6 @@ P2. Input a sentence that ends with a period.
     Print the list and  the number of words. 
     What if the sentence is empty?
 '''
-
 p2 = "Hello my name is seunghee."
 p2l = p2.split()
 print (p2l)
@@ -170,7 +164,6 @@ P3.
     and print the remaining words. 
     What if there is only one word in the list?
 '''
-
 p3 = "Hello my name is seunghee."
 p3l = p3.split()
 p3_ = p3l[1:len(p3l)-1]
@@ -201,9 +194,7 @@ p4_correct = ["hello", "dear", "friend"]
 p4_incorrect[2] = p4_correct[2]
 print (p4_incorrect)
 
-
 # ------------------------------ Range ------------------------------#
-
 r = range(5)    # Generates[0,1,2,3,4]
 
 # (starting value, upper limit, steps)

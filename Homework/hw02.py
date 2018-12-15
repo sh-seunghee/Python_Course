@@ -56,7 +56,6 @@ L4.insert(3, 100)
 L4 = sorted(L4)
 print (L4)
 
-
 #Q5
 print("Q5")
 # TODO

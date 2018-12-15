@@ -72,7 +72,6 @@ locs = []
 while True:
 
     x_y = input()
-
     if x_y == "\end":
         break
 
@@ -91,7 +90,6 @@ def comp1(p1, p2):
         return p2
 
     else:
-
         # Compare y point
         if p1[1] < p2[1]:
             return p1

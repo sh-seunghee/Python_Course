@@ -53,7 +53,6 @@ sepal_lengths_of_the_centroid = sorted(sepal_lengths_of_the_centroid)
 for i in range(0, 3):
     print("Centroid %d sepal length:%0.4f" %(i+1, sepal_lengths_of_the_centroid[i]))
 
-
 #Q3
 print("Q3")
 

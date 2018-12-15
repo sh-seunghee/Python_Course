@@ -166,8 +166,6 @@ class PlayerX(Player):
 
             return "end"
 
-
-
 if __name__ == "__main__":
 
     playerX = PlayerX()
@@ -200,4 +198,3 @@ if __name__ == "__main__":
         print ("Player X score: %d, Player Y score: %d" %(playerX.get_score(), playerY.get_score()))
 
     print ("Game over")
-

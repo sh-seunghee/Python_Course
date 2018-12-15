@@ -5,7 +5,6 @@ def findSum(nums, target):
 
     # nums: a list of integers
     # target: target number
-
     num_seen = {}
 
     # Using hash-table; dictionary
@@ -19,7 +18,6 @@ def findSum(nums, target):
             num_seen[nums[i]] = i
 
     return 0
-
 
 def maxPrefix(strs):
 
@@ -53,13 +51,12 @@ def maxPrefix(strs):
             common += letter
             idx += 1
 
-    if (common == ""):
+    if common == "":
         return "NULL"
     else:
         return common
 
 def getData(filename):
-
     # Load the file
     data = op.load_workbook(filename, read_only=True)
     sheet = data['Sheet1']
@@ -88,7 +85,6 @@ def getData(filename):
     col_MV101 = -1
     col_P101 = -1
     col_FIT201 = -1
-
 
     while key is not None:
 
@@ -124,10 +120,7 @@ def getData(filename):
         v = sheet.cell(row=i, column=col_FIT201).value
         FIT201.append(v)
 
-
     return [MV101,FIT101,LIT101,P101,FIT201]
-
-
 
 def swatStates(MV101, FIT101, LIT101, P101, FIT201):
 
@@ -152,12 +145,10 @@ def swatStates(MV101, FIT101, LIT101, P101, FIT201):
     var_checked_FIT101 = numpy.var(checked_FIT101)
     var_checked_FIT201 = numpy.var(checked_FIT201)
 
-
-    print("Device\tMean Variance")
-    print("LIT101\t%.2f %.4f" % (mean_checked_LIT101, var_checked_LIT101))
-    print("FIT101\t%.2f %.4f" % (mean_checked_FIT101, var_checked_FIT101))
-    print("FIT201\t%.2f %.4f" % (mean_checked_FIT201, var_checked_FIT201))
-
+    print ("Device\tMean Variance")
+    print ("LIT101\t%.2f %.4f" % (mean_checked_LIT101, var_checked_LIT101))
+    print ("FIT101\t%.2f %.4f" % (mean_checked_FIT101, var_checked_FIT101))
+    print ("FIT201\t%.2f %.4f" % (mean_checked_FIT201, var_checked_FIT201))
 
 def transient(data_series_MV101):
 
@@ -177,7 +168,6 @@ def transient(data_series_MV101):
             trans_time += 1
 
     return trans_time, closing_begin_time
-
 
 if __name__ == "__main__":
 
